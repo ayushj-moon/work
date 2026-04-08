@@ -1,0 +1,39 @@
+JavaScript :
+
+is programming language used to make web pages interactive and dynamic.
+
+<button onclick="alert('Hello!')">Click Me</button>
+
+js runs in the browser using :
+
+1.HTML load in browser
+2.builds a structure called DOM(Document object model)
+3.Find js code
+4.execute it using js engine
+
+<script> tag : 
+it is used to write or include js in html
+
+js output methods:
+
+document.getElementById("demo").innerHTML = "this is me";
+
+document.write("hello world");
+
+// alert("hello world");
+
+console.log("this is me");
+
+variable : 
+
+var -> is keyword in js that can be redeclared and updated. It is functional scoped.
+
+let -> is keyword in js that cannot be redeclared but can be updated. it is block scoped.
+
+const -> is keyword in js that cannot be redeclared or updated. it is block scoped.
+
+Hoisting : 
+
+
+
+
