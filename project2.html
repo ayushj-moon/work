@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 60%;
+            padding: 30px;
+            background-color:aliceblue;
+            box-shadow: 0 8px 8px gainsboro;
+            border-radius: 20px;
+        }
+
+
+        .firstsection {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .secondsection {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+
+        label {
+            font-weight: bold;
+        }
+
+        #fname,
+        #email,
+        #password,
+        #password,
+        #age,
+        #phone,
+        #dob {
+            padding: 8px;
+            border: 1px solid wheat;
+        }
+
+        .second1 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .second2 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .second3 {
+            display: flex;
+            gap: 10px;
+        }
+
+        #Country {
+            padding: 2px;
+            font-size: large;
+            font-weight: bold;
+            border: 1px solid wheat;
+        }
+
+        .thirdsection {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .third1 {
+            display: flex;
+            gap: 10px;
+        }
+
+        #fileupload {
+            padding: 2px;
+            font-size: large;
+            font-weight: 700;
+        }
+
+        .fourthsection {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fourth1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fourth1 input {
+            padding: 8px;
+            border: 1px solid wheat;
+        }
+
+        .fifthsection {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fifth1,
+        .fifth2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fifth1 input {
+            padding: 8px;
+            border: 1px solid wheat;
+        }
+
+        .fifth2 input {
+            padding: 8px;
+            border: 1px solid wheat;
+        }
+
+        .fifth4 input {
+            padding: 8px;
+            border: 1px solid wheat;
+        }
+
+        .sixthsection {
+            margin-top: 2%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .seventhsection {
+            display: flex;
+            gap: 30px;
+            margin-top: 2%;
+        }
+
+        button {
+            padding: 8px 15px 8px 15px;
+            cursor: pointer;
+            font-size: 15px;
+            border: none;
+        }
+
+        .reset {
+            background-color: brown;
+            border-radius: 10px;
+            color: azure;
+            font-weight: 600;
+        }
+
+        .submit {
+            background-color: green;
+            border-radius: 10px;
+            color: azure;
+            font-weight: 600;
+        }
+
+        .reset:hover {
+            background-color: rgba(165, 42, 42, 0.587);
+            color: brown;
+            border: 1px solid indianred;
+        }
+
+        .submit:hover {
+            background-color: rgba(0, 128, 0, 0.511);
+            color: green;
+            border: 1px solid greenyellow;
+        }
+
+        textarea{
+            border: 1px solid bisque;
+            font-size: medium;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="GET">
+            <div class="firstsection">
+                <label for="fname">Full Name : </label>
+                <input type="text" name="fname" id="fname">
+
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email">
+
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password">
+
+                <label for="age">Age : </label>
+                <input type="number" name="age" id="age">
+
+                <label for="phone">Phone number : </label>
+                <input type="tel" name="phone" id="phone" placeholder="9999999999">
+
+                <label for="dob">Date of Birth : </label>
+                <input type="date" name="dob" id="dob">
+
+                <label for="profilecolor">Profile Color : </label>
+                <input type="color" id="profilecolor" name="profilecolor">
+            </div>
+
+            <div class="secondsection">
+                <div class="second1">
+                    <label for="radio">Gender : </label>
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" name="gender" id="other" value="Other">
+                    <label for="other">Other</label>
+                </div>
+
+                <div class="second2">
+
+                    <label for="checkbox">Skills : </label>
+                    <input type="checkbox" name="HTML" id="HTML">
+                    <label for="HTML">HTML</label>
+
+                    <input type="checkbox" name="CSS" id="CSS">
+                    <label for="CSS">CSS</label>
+
+                    <input type="checkbox" name="JavaScript" id="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                </div>
+
+                <div class="second3">
+
+                    <label for="Country">Country : </label>
+                    <select name="Country" id="Country">
+                        <option class="op" value="India">India</option>
+                        <option class="op" value="Other">Japan</option>
+                        <option class="op" value="Other">Canada</option>
+                        <option class="op" value="Other">USA</option>
+                        <option class="op" value="Other">Brazil</option>
+                        <option class="op" value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="thirdsection">
+
+                <div class="third1">
+                    <p>Upload profile image : </p>
+                    <input type="file" name="file" id="fileupload">
+                </div>
+
+                <div class="third2">
+                    <label for="experience">Experience Level (0 to 10): </label>
+                    <input type="range" name="experience" id="experience" min="0" max="10" value="0">
+                </div>
+
+            </div>
+
+            <div class="fourthsection">
+
+                <div class="fourth1">
+                    <label for="date">Select date : </label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <div class="fourth2">
+                    <label for="time">Select Time : </label>
+                    <input type="time" name="time" id="time">
+                </div>
+
+                <div class="fourth3">
+                    <label for="month">Select Month : </label>
+                    <input type="month" name="month" id="month">
+                </div>
+
+                <div class="fourth4">
+                    <label for="week">Select Week : </label>
+                    <input type="week" name="week" id="week">
+                </div>
+            </div>
+
+            <div class="fifthsection">
+
+                <div class="fifth1">
+                    <label for="url">Website URL : </label>
+                    <input type="url" name="url" id="url">
+                </div>
+
+                <div class="fifth2">
+                    <label for="search">Search field : </label>
+                    <input type="search" name="search" id="search">
+                </div>
+
+                <div class="fifth3">
+                    <label for="hidden">hidden field : </label>
+                    <input type="hidden" name="hidden" id="hidden">
+                </div>
+
+                <div class="fifth4">
+                    <label for="random">Random field : </label>
+                    <input type="text" name="hidden" id="hidden">
+                </div>
+
+                <div class="fifth5">
+                    <label for="disable">Disabled field : </label>
+                    <input type="text" name="disable" id="disable" disabled>
+                </div>
+            </div>
+
+            <div class="sixthsection">
+                <label for="message">Message : </label>
+                <textarea name="message" id="message" cols="50" rows="4"
+                    placeholder="please Enter the message here "></textarea>
+            </div>
+
+            <div class="seventhsection">
+
+                <div class="button1">
+                    <button type="reset" class="reset">Reset</button>
+                </div>
+                <div class="button2">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
