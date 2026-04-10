@@ -34,6 +34,34 @@ const -> is keyword in js that cannot be redeclared or updated. it is block scop
 
 Hoisting : 
 
+Hoisting means js move declarations to top.
+
+for var it gives undefined 
+for const and let it gives temporal dead zone
+
+function:
+
+function declarations: 
+
+A function defined using the function keyword
+function functionName(parameters) {
+  // code to be executed
+}
+
+function expression:
+
+a function that stored in another function
+
+
+
+Arrays :
+
+arrays declarations :
+let arr = [32,43,12,65];
+
+methods:
+
+length, push, pop, shift, unshift, slice , splice , concat, reduce , filter
 
 
 
